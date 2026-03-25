@@ -1,0 +1,382 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Dienstleistungen",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "faq": "FAQ"
+  },
+  "common": {
+    "learnMore": "Mehr Erfahren",
+    "getStarted": "Loslegen",
+    "contactUs": "Kontaktieren Sie Uns",
+    "submit": "Absenden",
+    "sending": "Wird gesendet...",
+    "success": "Erfolg",
+    "error": "Fehler",
+    "close": "Schließen",
+    "readMore": "Weiterlesen",
+    "viewAll": "Alle Anzeigen",
+    "language": "Sprache",
+    "theme": "Thema",
+    "light": "Hell",
+    "dark": "Dunkel"
+  },
+  "cookie": {
+    "title": "Cookie-Einwilligung",
+    "message": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Traffic zu analysieren. Indem Sie \"Alle Akzeptieren\" klicken, stimmen Sie unserer Verwendung von Cookies zu.",
+    "acceptAll": "Alle Akzeptieren",
+    "acceptEssential": "Nur Essenzielle",
+    "privacyPolicy": "Datenschutzerklärung"
+  },
+  "home": {
+    "hero": {
+      "tagline": "Die Plattform für Strukturelle Integrität",
+      "title": "Realität mit",
+      "titleHighlight": "Absicht",
+      "subtitle": "Die erste Aktive Governance-Engine, angetrieben durch GraphRAG. Wir verwandeln verstreute Daten in eine einheitliche Quelle der Wahrheit und verhindern \"Drift\", bevor sie Ihr System zerstört.",
+      "ctaPrimary": "Demo Ansehen",
+      "ctaSecondary": "Mehr Erfahren"
+    },
+    "problem": {
+      "intentTitle": "Die Absicht (Der Plan)",
+      "intentDesc": "Architekturdokumente, Gesetze, Protokolle",
+      "intentLabel": "Statisch & Idealisiert",
+      "gapLabel": "DIE LÜCKE",
+      "realityTitle": "Die Realität (Das Chaos)",
+      "realityDesc": "Code, Logs, Transaktionen, E-Mails",
+      "realityLabel": "Dynamisch & Chaotisch"
+    },
+    "engine": {
+      "title": "Die ORA-Schleife",
+      "subtitle": "Die meisten Tools beobachten nur. Orthyx schließt die Schleife. Wir nutzen GraphRAG, um über Beziehungen zu schlussfolgern, nicht nur über Keywords.",
+      "observe": {
+        "title": "1. Beobachten",
+        "desc": "\"Absicht\" (PDFs, Docs) und \"Realität\" (Code, Logs) aufnehmen. In Knoten normalisieren."
+      },
+      "reason": {
+        "title": "2. Schlussfolgern",
+        "desc": "GraphRAG durchquert Kanten. \"Verstößt Code-Knoten A gegen Regel-Knoten B?\""
+      },
+      "act": {
+        "title": "3. Handeln",
+        "desc": "PRs blockieren. Verträge kennzeichnen. Teams alarmieren. Integrität durchsetzen."
+      },
+      "detail": {
+        "observeTitle": "1. Beobachten: Die Aufnahmeschicht",
+        "observeDesc": "Connectors ziehen Daten aus Confluence, GitHub, Jira und Slack. Wir nutzen LLMs, um Entitäten (Knoten) und Beziehungen (Kanten) aus unstrukturiertem Text zu extrahieren und in unsere Graph-Ontologie zu normalisieren.",
+        "reasonTitle": "2. Schlussfolgern: GraphRAG-Durchquerung",
+        "reasonDesc": "Wir kippen nicht einfach Text in ein LLM. Wir durchqueren den Graphen. Wenn Sie nach 'Zahlungs-Compliance' fragen, holen wir nur den relevanten Untergraphen (Service + Doc + Gesetz) und füttern diesen präzisen Kontext in das Modell.",
+        "actTitle": "3. Handeln: Die Governance-Engine",
+        "actDesc": "Passive Dashboards sind nutzlos. Orthyx löst Webhooks aus. Wir blockieren CI/CD-Pipelines über GitHub Checks, kennzeichnen Salesforce-Objekte über API oder senden hochprioritäre Jira-Tickets zur Behebung."
+      }
+    },
+    "simulation": {
+      "title": "Live-Integritäts-Simulation",
+      "subtitle": "Wechseln Sie Perspektiven, um zu sehen, wie Orthyx Drift in verschiedenen Branchen erkennt.",
+      "devops": "DevOps (Architektur-Drift)",
+      "journalism": "Journalismus (Narrativer Drift)",
+      "compliance": "Unternehmen (Regulatorischer Drift)",
+      "runAnalysis": "Graph-Analyse Starten",
+      "dataStream": "Eingehender Datenstrom",
+      "scenarios": {
+        "devops": {
+          "title": "Szenario: Architektur-Drift",
+          "desc": "Codebase enthält einen Microservice ('Payment-v1'), der gegen die 'Kein Direkter DB-Zugriff'-Richtlinie in ADR-042 verstößt.",
+          "alert": "Drift: 'Payment-v1' umgeht Gateway. PR Blockiert."
+        },
+        "journalism": {
+          "title": "Szenario: Narrativer Drift",
+          "desc": "Senator X leugnet öffentlich Ölverbindungen, aber geleakte 'Panama Papers' zeigen einen Trust, der Shell Corp Aktien hält.",
+          "alert": "Konflikt: Senator X über Trust B mit Shell Corp verbunden."
+        },
+        "compliance": {
+          "title": "Szenario: Regulatorischer Drift",
+          "desc": "Ein Verkaufsvertrag in Salesforce enthält eine Klausel, die der neuen EU AI Act-Richtlinie in Legal Sharepoint widerspricht.",
+          "alert": "Compliance: Vertrag #99 verstößt gegen EU AI Act Sec 4."
+        }
+      }
+    },
+    "market": {
+      "title": "Das \"Leere Quadrant\"",
+      "subtitle": "Existierende Tools sind entweder passiv (Observability) oder konzentrieren sich auf Code-Syntax (Linter). Orthyx ist die einzige Aktive Governance-Plattform, die Strukturelle Integrität prüft.",
+      "vsDatadog": "VS Datadog:",
+      "vsDatadogDesc": "Sie sagen Ihnen, ob es langsam ist. Wir sagen Ihnen, ob es das falsche System ist.",
+      "vsSnyk": "VS Snyk:",
+      "vsSnykDesc": "Sie finden generische Bugs. Wir finden spezifische Richtlinienverstöße.",
+      "vsPalantir": "VS Palantir:",
+      "vsPalantirDesc": "Sie kosten 5M$/Jahr und dauern 6 Monate. Wir sind Self-Service und starten bei 20k$."
+    },
+    "roadmap": {
+      "title": "Roadmap & Einnahmen",
+      "subtitle": "Eine skalierbare Produktstrategie, beginnend mit DevOps.",
+      "phase1": {
+        "title": "DevOps (Jetzt)",
+        "tag": "Der Brückenkopf",
+        "features": ["Core 'Linter' für CI/CD", "GitHub & Jira Integration", "20k$/Jahr pro Org"]
+      },
+      "phase2": {
+        "title": "Journalismus (18 Mo)",
+        "tag": "Der Markenaufsteller",
+        "features": ["Leaked Doc Ingestion", "Local-First Datenschutzmodus", "Virales 'Wahrheits'-Marketing"]
+      },
+      "phase3": {
+        "title": "Unternehmen (36 Mo)",
+        "tag": "Die Plattform",
+        "features": ["Lieferketten-Integrität", "Finanz-Compliance", "Globale 'Reality Engine'"]
+      }
+    },
+    "pricing": {
+      "title": "Mitgliedschafts- & Preismodelle",
+      "selfHosted": {
+        "tag": "Self-Hosted",
+        "name": "Orthyx Local",
+        "desc": "Für investigativen Journalismus & Hochsicherheits-Behörden.",
+        "price": "500$",
+        "period": "/Mo",
+        "features": ["Lokale Graph-Verarbeitung", "Air-gapped Fähigkeit", "Quellenschutz"]
+      },
+      "cloud": {
+        "tag": "Am Beliebtesten",
+        "name": "Orthyx Cloud",
+        "desc": "Für Entwicklungsteams & CTOs.",
+        "price": "20k$",
+        "period": "/Jahr",
+        "features": ["CI/CD Gatekeeper", "GitHub & Jira Connectors", "5 Aktive Services"]
+      },
+      "modules": {
+        "tag": "Add-Ons",
+        "name": "Graph-Module",
+        "desc": "Vorverpflanzte Ontologien für spezifische Bedürfnisse.",
+        "price": "Individuell",
+        "features": ["GDPR Compliance Graph", "SOC2 Audit Graph", "Basel III FinGraph"]
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Über OrthyxAI",
+      "subtitle": "Die Zukunft der strukturellen Integrität durch KI-gestützte Governance aufbauen"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "content": "Die Lücke zwischen organisatorischer Absicht und operativer Realität eliminieren. Wir glauben, dass jedes System, vom Code bis zu Verträgen, seinen konzipierten Zweck treu repräsentieren sollte."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "content": "Eine Welt, in der Drift erkannt wird, bevor er zur Katastrophe wird. Wo Compliance automatisch ist, nicht manuell. Wo Organisationen vertrauen können, dass ihre Operationen ihren Prinzipien entsprechen."
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "integrity": {
+        "title": "Integrität Zuerst",
+        "desc": "Wir glauben daran, das Richtige zu tun, auch wenn niemand zuschaut. Unsere Technologie erzwingt dieses Prinzip im großen Maßstab."
+      },
+      "transparency": {
+        "title": "Radikale Transparenz",
+        "desc": "Wir machen das Unsichtbare sichtbar. Versteckte Verbindungen, stille Verstöße, subtile Drift—alles ans Licht gebracht."
+      },
+      "action": {
+        "title": "Aktion Statt Beobachtung",
+        "desc": "Passive Überwachung reicht nicht aus. Wir schließen die Schleife von der Erkennung zur Lösung."
+      }
+    },
+    "team": {
+      "title": "Unser Team",
+      "subtitle": "Weltklasse-Experten für KI, Governance und verteilte Systeme",
+      "members": {
+        "ceo": {
+          "name": "Dr. Sarah Chen",
+          "role": "Geschäftsführerin",
+          "bio": "Ehemalige Principal Engineer bei Google, PhD in Verteilten Systemen vom MIT"
+        },
+        "cto": {
+          "name": "Marcus Williams",
+          "role": "Technischer Leiter",
+          "bio": "Ex-Palantir Gründungsingenieur, Experte für Wissensgraphen und Compliance-Systeme"
+        },
+        "cso": {
+          "name": "Elena Rodriguez",
+          "role": "Strategische Leiterin",
+          "bio": "Ehemalige Partnerin bei McKinsey, leitete digitale Transformation für Fortune 500-Unternehmen"
+        }
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Unsere Dienstleistungen",
+      "subtitle": "Umfassende Lösungen für strukturelle Integrität für moderne Unternehmen"
+    },
+    "governance": {
+      "title": "Aktive Governance",
+      "desc": "Richtliniendurchsetzung in Echtzeit über Ihre gesamte Technologie-Stack. Von Code-Commits bis zu Produktionsdeployments—stellen Sie sicher, dass jede Änderung mit Ihren Architekturentscheidungen übereinstimmt.",
+      "features": ["CI/CD Pipeline-Integration", "Automatische Richtlinienprüfung", "Verstoß-Blockierung", "Compliance-Berichterstattung"]
+    },
+    "intelligence": {
+      "title": "GraphRAG Intelligenz",
+      "desc": "Unser proprietäres Graph Retrieval Augmented Generation-System versteht Beziehungen, nicht nur Keywords. Entdecken Sie verborgene Verbindungen und potenzielle Verstöße, die traditionellen Tools unsichtbar bleiben.",
+      "features": ["Wissensgraph-Konstruktion", "Beziehungsdurchquerung", "Kontextuelles Schlussfolgern", "Multi-Hop-Analyse"]
+    },
+    "compliance": {
+      "title": "Regulatorische Compliance",
+      "desc": "Bleiben Sie stets voraus mit automatisierter Compliance-Prüfung. Von DSGVO bis SOX bis zu branchenspezifischen Vorschriften—Orthyx stellt sicher, dass Sie jederzeit auditbereit sind.",
+      "features": ["DSGVO-Compliance", "SOC2-Automatisierung", "Benutzerdefinierte Regulierungsunterstützung", "Audit-Trail-Generierung"]
+    },
+    "consulting": {
+      "title": "Unternehmensberatung",
+      "desc": "Unsere Experten arbeiten mit Ihrem Team zusammen, um Praktiken der strukturellen Integrität in Ihrer Organisation zu implementieren. Von der ersten Bewertung bis zur vollständigen Bereitstellung und Schulung.",
+      "features": ["Architekturreview", "Benutzerdefinierte Integration", "Team-Schulung", "Laufender Support"]
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portfolio & Anwendungsfälle",
+      "subtitle": "Realitätsnahe Beispiele für strukturelle Integrität in Aktion"
+    },
+    "cases": {
+      "fintech": {
+        "title": "Globale FinTech-Plattform",
+        "industry": "Finanzdienstleistungen",
+        "challenge": "Ein großer Zahlungsabwickler musste sicherstellen, dass alle Microservices PCI-DSS-Anforderungen erfüllten, während eine schnelle Deployment-Geschwindigkeit aufrechterhalten wurde.",
+        "solution": "Bereitstellung von Orthyx Cloud zur automatischen Prüfung jedes PR gegen PCI-DSS-Richtliniengraphen, Blockierung von Verstößen vor der Produktion.",
+        "results": "99,7% Compliance-Rate, 85% Reduktion der Audit-Befunde, 3x schnellere Deployment-Zyklen."
+      },
+      "healthcare": {
+        "title": "Gesundheitsdaten-Netzwerk",
+        "industry": "Gesundheitswesen",
+        "challenge": "Ein Krankenhausnetzwerk musste Patientendatenflüsse über 50+ Systeme verfolgen, um HIPAA-Compliance sicherzustellen und unautorisierte Zugriffsmuster zu verhindern.",
+        "solution": "Implementierung von Orthyx Local mit benutzerdefinierter Gesundheitsontologie zur Kartierung aller Datenflüsse und automatischen Kennzeichnung potenzieller HIPAA-Verstöße.",
+        "results": "Null Compliance-Vorfälle in 18 Monaten, vollständiger Audit-Trail für alle Datenzugriffe, 60% Reduktion manueller Compliance-Arbeit."
+      },
+      "media": {
+        "title": "Investigative Redaktion",
+        "industry": "Medien & Journalismus",
+        "challenge": "Eine große Nachrichtenorganisation musste Fakten über Tausende geleakte Dokumente verifizieren und gleichzeitig Quellen schützen.",
+        "solution": "Bereitstellung einer air-gapped Orthyx Local-Instanz zur Analyse von Dokumentbeziehungen ohne externe Konnektivität, Sicherstellung des Quellenschutzes.",
+        "results": "3 große Geschichten mithilfe von GraphRAG-Analyse aufgedeckt, null Quellenkompromisse, 10x schnellere Dokumentenanalyse."
+      }
+    }
+  },
+  "blog": {
+    "hero": {
+      "title": "Blog & Neuigkeiten",
+      "subtitle": "Einblicke in strukturelle Integrität, KI-Governance und Compliance"
+    },
+    "readMore": "Artikel Lesen",
+    "articles": {
+      "graphrag": {
+        "title": "Warum GraphRAG Traditionelles RAG Schlägt",
+        "excerpt": "Traditionelle Retrieval-Systeme behandeln Dokumente als flachen Text. Hier ist, warum das Verstehen von Beziehungen alles verändert.",
+        "date": "15. Januar 2026",
+        "category": "Technologie"
+      },
+      "drift": {
+        "title": "Die Versteckten Kosten von Architektur-Drift",
+        "excerpt": "Wie sich kleine Abweichungen zu großer technischer Schulden ansammeln—und wie man sie früh stoppt.",
+        "date": "10. Januar 2026",
+        "category": "Entwicklung"
+      },
+      "compliance": {
+        "title": "Die Zukunft der Automatisierten Compliance",
+        "excerpt": "Warum die nächste Generation von Compliance-Tools proaktiv, nicht reaktiv sein wird.",
+        "date": "5. Januar 2026",
+        "category": "Compliance"
+      },
+      "gdpr": {
+        "title": "DSGVO 2026: Was Sie Wissen Müssen",
+        "excerpt": "Kommende Änderungen an europäischen Datenschutzvorschriften und wie Sie sich vorbereiten.",
+        "date": "28. Dezember 2025",
+        "category": "Regulierung"
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontaktieren Sie Uns",
+      "subtitle": "Nehmen Sie Kontakt auf, um zu erfahren, wie OrthyxAI Ihre Governance transformieren kann"
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Max Mustermann",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "max@beispiel.de",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Wie können wir helfen?",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "submit": "Nachricht Senden",
+      "success": "Vielen Dank für Ihre Nachricht! Wir werden uns bald bei Ihnen melden.",
+      "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse",
+      "hours": "Geschäftszeiten"
+    }
+  },
+  "faq": {
+    "hero": {
+      "title": "Häufig Gestellte Fragen",
+      "subtitle": "Alles, was Sie über OrthyxAI wissen müssen"
+    },
+    "questions": {
+      "what": {
+        "q": "Was ist OrthyxAI?",
+        "a": "OrthyxAI ist eine Aktive Governance-Engine, angetrieben durch GraphRAG-Technologie. Wir helfen Organisationen, 'Drift' zu erkennen und zu verhindern—die Lücke zwischen beabsichtigten Richtlinien und operativer Realität—bevor er Probleme verursacht."
+      },
+      "graphrag": {
+        "q": "Was ist GraphRAG?",
+        "a": "GraphRAG (Graph Retrieval Augmented Generation) ist unser proprietärer Ansatz, der Wissensgraphen mit Sprachmodellen kombiniert. Im Gegensatz zu traditionellem RAG, das Dokumente als flachen Text behandelt, verstehen wir Beziehungen und können komplexe Abhängigkeitsketten durchqueren."
+      },
+      "integration": {
+        "q": "Wie lange dauert die Integration?",
+        "a": "Die meisten Teams sind innerhalb eines Tages einsatzbereit. Unsere GitHub- und Jira-Connectors funktionieren sofort, und unsere Graph-Konstruktion geschieht automatisch, wenn Sie Datenquellen verbinden."
+      },
+      "security": {
+        "q": "Sind meine Daten sicher?",
+        "a": "Absolut. Wir bieten sowohl Cloud- als auch Self-Hosted-Optionen. Unsere Local-Bereitstellung läuft vollständig air-gapped ohne externe Konnektivität, perfekt für Hochsicherheitsumgebungen."
+      },
+      "pricing": {
+        "q": "Wie funktioniert die Preisgestaltung?",
+        "a": "Wir bieten transparente Preisgestaltung ab 20k$/Jahr für unser Cloud-Angebot. Self-Hosted-Bereitstellungen beginnen bei 500$/Monat. Kontaktieren Sie uns für Enterprise-Preisgestaltung und individuelle Anforderungen."
+      },
+      "support": {
+        "q": "Welche Art von Support bieten Sie an?",
+        "a": "Alle Pläne beinhalten E-Mail-Support mit 24-Stunden-Antwortzeit. Enterprise-Pläne beinhalten dedizierte Support-Ingenieure, SLA-Garantien und individuelle Integrationshilfe."
+      }
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lastUpdated": "Zuletzt aktualisiert: 1. Januar 2026"
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "lastUpdated": "Zuletzt aktualisiert: 1. Januar 2026"
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "lastUpdated": "Zuletzt aktualisiert: 1. Januar 2026"
+    },
+    "impressum": {
+      "title": "Impressum",
+      "company": "OrthyxAI Inc.",
+      "address": "123 Innovation Drive\nSan Francisco, CA 94105\nVereinigte Staaten",
+      "contact": "Kontakt",
+      "registration": "Registrierung"
+    }
+  },
+  "footer": {
+    "tagline": "Realität, Geprüft.",
+    "legal": "Rechtliches",
+    "social": "Folgen Sie Uns",
+    "copyright": "© 2026 OrthyxAI Inc. Alle Rechte vorbehalten."
+  }
+}

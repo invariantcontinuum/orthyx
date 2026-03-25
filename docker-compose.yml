@@ -1,0 +1,50 @@
+services:
+  orthyxai-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: orthyxai-backend
+    hostname: orthyxai-backend
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+      - SMTP_HOST=${SMTP_HOST:-mail.invariantcontinuum.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_SECURE=${SMTP_SECURE:-false}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      - SMTP_FROM=${SMTP_FROM:-noreply@orthyxai.com}
+      - CONTACT_EMAIL=${CONTACT_EMAIL:-contact@orthyxai.com}
+    networks:
+      - orthyxai-network
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:5000/api/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  orthyxai-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: orthyxai-frontend
+    hostname: orthyxai-frontend
+    restart: unless-stopped
+    ports:
+      - "5001:80"
+    depends_on:
+      orthyxai-backend:
+        condition: service_healthy
+    environment:
+      - NODE_ENV=production
+    networks:
+      - orthyxai-network
+
+networks:
+  orthyxai-network:
+    external: true
+    name: orthyxai-network
